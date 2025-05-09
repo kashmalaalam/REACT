@@ -1,0 +1,49 @@
+.home-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.home-container h1 {
+  font-size: 2.8rem;
+  color: #007bff;
+  margin-bottom: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+.product-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 30px;
+  padding: 20px 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide-item {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  width: 300px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.slide-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.slide-item h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.slide-item:hover {
+  transform: translateY(-5px) scale(1.02);
+}
